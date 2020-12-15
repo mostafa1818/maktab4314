@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(https://i.postimg.cc/8cf6v1rk/1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+    filter: blur(5px);
+    filter:brightness(100%) saturate(100%) ; 
+}
+.contact-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 350px;
+	padding: 80px 40px;
+	background: rgba(20%,90%,90%,70%);	
+}
+.contact-form h2 
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.contact-form input 
+{
+	width: 100%;
+	
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+.contact-form input[type=text]:hover, .contact-form input[type=password]:hover {
+    border: none;
+    opacity: 50%;
+	background: rgba(20%,50%,90%,70%);
+	outline: none;
+	height: 40px;
+	font-size: 16px;
+}
+.contact-form input[type=text]:not(:hover), .contact-form input[type=password]:not(:hover) 
+{
+    border: none;
+    opacity: 40%;
+	background: rgba(20%,50%,90%,60%);
+	outline: none;
+	height: 40px;
+	font-size: 16px;
+}
+.contact-form input[type=submit] 
+{
+	height: 30px;
+	color: #fff;
+	font-size: 15px;
+	background: rgb(120, 83, 255);
+	cursor: pointer; 
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	margin-top: 10%;
+}
+.contact-form button 
+{  
+	background:none;
+	border:none;
+	height: 30px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+	left: auto;
+	margin-left: 35%;
+	border: none;
+	outline: none;
+	margin-top: 0;
+	text-align: center;	
+}
